@@ -7,15 +7,18 @@ const [cat,
 
 const {
     name: catName = "kitty",
-    sound: catSound = "purr"
+    sound: catSound = "purr",
+    dailyFeeding: {food: catFood, water: catWater}
 } = cat;
+
 const {
     name: dogName = "puppy",
-    sound: dogSound = "bark"
+    sound: dogSound = "bark",
+    dailyFeeding: {food: dogFood, water: dogWater}
 } = dog;
 
-console.log(catName + ": " + catSound);
-console.log(dogName + ": " + dogSound);
+console.log(catName + ": " + catFood + " " + catWater);
+console.log(dogName + ": " + dogFood + " " + dogWater);
 
 // CHALLENGE: uncomment the code below and see the car stats rendered import
 // React from "react"; import ReactDOM from "react-dom"; ReactDOM.render(
