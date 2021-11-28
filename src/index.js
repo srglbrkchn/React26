@@ -6,11 +6,11 @@ const [cat,
     dog] = animals;
 
 const {
-    name: catName,
+    name: catName = "kitty",
     sound: catSound = "purr"
 } = cat;
 const {
-    name: dogName,
+    name: dogName = "puppy",
     sound: dogSound = "bark"
 } = dog;
 
