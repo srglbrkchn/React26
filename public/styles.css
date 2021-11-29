@@ -12,6 +12,7 @@ th{
 td {
     padding: .5rem;
     border: tan 1px solid;
+    text-transform: capitalize;
 }
 
 table {
