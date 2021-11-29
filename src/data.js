@@ -16,4 +16,14 @@ const animals = [
     }
 ];
 
+function useAnimals(animal) {
+    return [
+        animal.name, 
+        () => {
+            console.log(animal.sound);
+        }
+    ]
+}
+
 export default animals;
+export {useAnimals};

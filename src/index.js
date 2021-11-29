@@ -1,24 +1,30 @@
-import animals from "./data";
+import animals, {useAnimals} from "./data";
 
-console.log(animals);
+// console.log(animals);
 
+// Destructuring arrays
 const [cat,
     dog] = animals;
 
-const {
-    name: catName = "kitty",
-    sound: catSound = "purr",
-    dailyFeeding: {food: catFood, water: catWater}
-} = cat;
 
-const {
-    name: dogName = "puppy",
-    sound: dogSound = "bark",
-    dailyFeeding: {food: dogFood, water: dogWater}
-} = dog;
+// Destructuring objects
+// const {
+//     name: catName = "kitty",
+//     sound: catSound = "purr",
+//     dailyFeeding: {food: catFood, water: catWater}
+// } = cat;
 
-console.log(catName + ": " + catFood + " " + catWater);
-console.log(dogName + ": " + dogFood + " " + dogWater);
+// const {
+//     name: dogName = "puppy",
+//     sound: dogSound = "bark",
+//     dailyFeeding: {food: dogFood, water: dogWater}
+// } = dog;
+
+const [name, soundMakes] = useAnimals(cat);
+soundMakes();
+
+// console.log(catName + ": " + catFood + " " + catWater);
+// console.log(dogName + ": " + dogFood + " " + dogWater);
 
 // CHALLENGE: uncomment the code below and see the car stats rendered import
 // React from "react"; import ReactDOM from "react-dom"; ReactDOM.render(
